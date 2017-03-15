@@ -1,0 +1,24 @@
+<%= form_for(group) do |f| %>
+  <div class="form-group">
+  <% if group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
+
+      <ul>
+      <% group.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name, "群組名稱" %>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+</div><!--form-group-end-->
+
+  <div class="actions">
+    <%= f.submit "建立群組", class: "btn btn-default" %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pet_id: 1
+  food_type: 1
+  food_amount: 1
+  photo_id: MyString
+
+two:
+  pet_id: 1
+  food_type: 1
+  food_amount: 1
+  photo_id: MyString

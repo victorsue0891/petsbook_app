@@ -1,0 +1,42 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+.nav.navbar-nav.navbar-right li a {
+   color: white;
+}
+.navbar .navbar-header .navbar-brand {
+   color: #f0ad4e;
+} 
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+   background-color: #3344ff;
+   color:#ffffff;
+}
+@media (min-width: 979px) {
+   ul.nav li.dropdown:hover > ul.dropdown-menu {
+      display: block;
+      background-color: #6699ff;
+      color: white;
+   }
+   .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+      background-color: #3377ff;
+   }
+}
+
+.navbar li { color: #000 } 
+body { background-color: transparent; }
+html { 
+   background: url(image_path("blurred-bg-2.jpg")) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}

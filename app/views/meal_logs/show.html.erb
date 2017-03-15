@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pet:</strong>
+  <%= @meal_log.pet_id %>
+</p>
+
+<p>
+  <strong>Food id:</strong>
+  <%= @meal_log.food_id %>
+</p>
+
+<p>
+  <strong>Food amount:</strong>
+  <%= @meal_log.food_amount %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @meal_log.photo_id %>
+</p>
+
+<%= link_to 'Edit', edit_meal_log_path(@meal_log) %> |
+<%= link_to 'Back', meal_logs_path %>
